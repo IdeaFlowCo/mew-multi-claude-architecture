@@ -14,22 +14,29 @@ This system implements a multi-agent Claude architecture with three distinct rol
 
 ### Prerequisites
 
-Ensure you have the following environment variables configured:
-- `CURRENT_USER_ID`
-- `BASE_URL` 
-- `BASE_NODE_URL`
-- `AUTH0_DOMAIN`
-- `AUTH0_CLIENT_ID`
-- `AUTH0_CLIENT_SECRET`
-- `AUTH0_AUDIENCE`
+- Claude Code CLI installed (`npm install -g @anthropic-ai/claude-code`)
 
-### Running the System
+### Getting Started
 
-Currently, only Explorer Claude is implemented:
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd mew-multi-claude-architecture
+   ```
 
-```bash
-claude --dangerously-skip-permissions --mcp-config mcp-config.json
-```
+2. **Configure MCP settings:**
+   Copy `mcp-config.json.example` to `mcp-config.json` and fill in your values:
+   - `CURRENT_USER_ID`
+   - `AUTH0_DOMAIN`
+   - `AUTH0_CLIENT_ID`
+   - `AUTH0_CLIENT_SECRET`
+   - `AUTH0_AUDIENCE`
+
+3. **Start Explorer Claude:**
+   ```bash
+   cd claude-explorer
+   claude --dangerously-skip-permissions --mcp-config ../mcp-config.json
+   ```
 
 ### Future Architecture (In Development)
 
