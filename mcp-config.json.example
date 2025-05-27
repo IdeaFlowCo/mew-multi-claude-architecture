@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "Mew MCP": {
+            "command": "npx",
+            "args": ["-y", "mew-mcp@latest"],
+            "env": {
+                "CURRENT_USER_ID": "your-user-id",
+                "BASE_URL": "https://mew-edge.ideaflow.app/api",
+                "BASE_NODE_URL": "https://mew-edge.ideaflow.app/",
+                "AUTH0_DOMAIN": "your-auth0-domain.us.auth0.com",
+                "AUTH0_CLIENT_ID": "your-auth0-client-id",
+                "AUTH0_CLIENT_SECRET": "your-auth0-client-secret",
+                "AUTH0_AUDIENCE": "https://your-auth0-domain.us.auth0.com/api/v2/"
+            }
+        }
+    }
+}
