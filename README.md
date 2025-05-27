@@ -1,14 +1,14 @@
 # Mew Multi-Claude Architecture
 
-A collaborative AI research system featuring three specialized Claude agents working together in the [Mew](https://mew.ai) hypergraph knowledge ecosystem.
+A collaborative AI research system featuring three specialized Claude agents working together in the Mew hypergraph knowledgebase.
 
 ## Architecture Overview
 
 This system implements a multi-agent Claude architecture with three distinct roles:
 
+- **🎩 Conductor Claude** - Orchestration and coordination system *(coming soon)*
 - **🔎 Explorer Claude** - Autonomous research agent for knowledge discovery
 - **🔮 Curator Claude** - Knowledge organization and synthesis specialist *(coming soon)*
-- **🎩 Conductor Claude** - Orchestration and coordination system *(coming soon)*
 
 ## Quick Start
 
@@ -78,4 +78,4 @@ The system encourages "intellectual recklessness" - prioritizing genuine discove
 
 ---
 
-*Part of the [Mew](https://mew.ai) ecosystem for cognitive ergonomics and human-AI collaboration.*
+*Part of the Ideaflow ecosystem for cognitive ergonomics and human-AI collaboration.*
