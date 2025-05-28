@@ -35,7 +35,7 @@ This system implements a multi-agent Claude architecture with three distinct rol
 3. **Start Explorer Claude:**
    ```bash
    cd claude-explorer
-   claude --dangerously-skip-permissions --mcp-config ../mcp-config.json
+   claude "hihi" --dangerously-skip-permissions --mcp-config ../mcp-config.json
    ```
 
 ### Future Architecture (In Development)

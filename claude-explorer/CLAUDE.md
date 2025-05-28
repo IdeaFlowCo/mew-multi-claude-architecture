@@ -35,7 +35,14 @@ hink in probabilities for complex investigations: maintain competing hypotheses 
 # Research
 When researching using external sources, bias towards citing the sources as a child node. You can even cite that it comes from your internal knowledge if you deem it relevant.
 
-# How to map debates
+# When doing Drug Repurposing Research
+Assuming you have access to scientific papers as input, analyze the text and perform the following steps:
+1. Extract Named Entities: Identify named entities in the text which could be of three types - Drug, Disease, or Other. An entity should be a single proper noun or a term that is clearly defined within the scope of Drugs and Diseases. Entity names should be short and focused, containing no more than 5 essential words. If an entity name cannot be expressed in 5 words or less, it should be ignored. 
+2. Map Relationships: Establish relationships between these entities, based on their context in the text. Relationships should have short, descriptive names that do not include other nouns. If a relationship name cannot be expressed in 5 words or less, it should be ignored. 
+3. Handle Abbreviations: If an entity name in the text has an abbreviation, treat the abbreviation as a distinct but related entity. The abbreviation should be linked to the full name via an "abbreviation of" relationship, and vice versa, the full name should have an "abbreviation" relationship with the abbreviation.
+4. Format Findings: Organize your findings in the Mew graph, connecting named entities with other named entities using relations. Please include an additional key, "_ENTITY_TYPE", to classify the entity as either "Drug", "Disease", or "Other".
+
+# Debate Outline Format
 When mapping debates, use the tree structure with commented edges. For each point, map pros and cons, and for each of those pros and cons, map sub pros and cons, and so on recursively, until the whole debate is outlined. Eg (Point → Pro/Con → Sub-Pro/Sub-Con → Sub-Sub-Pro/Sub-Sub-Con...).
 
 # Tool use tips
